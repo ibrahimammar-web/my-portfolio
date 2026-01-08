@@ -1,20 +1,36 @@
 {
-  "nav": {
-    "home": "الرئيسية",
-    "projects": "المشاريع",
-    "contact": "تواصل",
-    "github": "GitHub",
-    "linkedin": "LinkedIn"
-  },
+  "nav": { "home": "الرئيسية", "projects": "المشاريع", "contact": "تواصل" },
   "hero": {
     "subtitle": "مطور Full-stack",
     "title": "أبني منصات SaaS، أنظمة حجز، ولوحات تحكم إدارية",
-    "description": "مطور مقيم في الرياض متخصص في Next.js، Supabase، و Tailwind CSS. أساعد الشركات في تحويل الأفكار إلى تطبيقات ويب قابلة للتوسع.",
+    "description": "مطور مقيم في الرياض متخصص في Next.js، Supabase، و Tailwind CSS.",
     "ctaProjects": "عرض الأعمال",
     "ctaContact": "تواصل معي"
   },
-  "about": {
-    "title": "نبذة سريعة",
-    "text": "أنشئ منصات حجز، أنظمة تسويق B2B، ولوحات تحكم مع بوابات دفع مدمجة (PayTabs، Geidea، Moyasar)."
-  }
+  "projects": {
+    "title": "نماذج من الأعمال",
+    "subtitle": "بعض الأمثلة على منصات SaaS ولوحات التحكم التي عملت عليها.",
+    "example": {
+      "name": "منصة B2B للحجوزات والتسويق",
+      "description": "منصة مبنية بـ Next.js و Supabase لإدارة الليدز، الحجوزات، ولوحة تحكم للإدارة.",
+      "tech": "التقنيات: Next.js · Supabase · Tailwind CSS"
+    }
+  },
+  "contact": {
+    "title": "تواصل معي",
+    "subtitle": "لو عندك فكرة SaaS أو نظام حجز أو لوحة تحكم، احكي لي عنها.",
+    "form": {
+      "name": "الاسم",
+      "namePlaceholder": "الاسم الكامل",
+      "email": "البريد الإلكتروني",
+      "emailPlaceholder": "you@example.com",
+      "message": "تفاصيل المشروع",
+      "messagePlaceholder": "نوع النظام، الميزانية التقريبية، والمدة المتوقعة.",
+      "submit": "إرسال (قريباً)"
+    }
+  },
+  "footer": {
+  "line1": "© {year} عبدالرحمن. جميع الحقوق محفوظة.",
+  "line2": "أبني منصات SaaS باستخدام Next.js و Supabase و Tailwind."
+}
 }

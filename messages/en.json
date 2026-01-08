@@ -1,20 +1,38 @@
 {
-  "nav": {
-    "home": "Home",
-    "projects": "Projects",
-    "contact": "Contact",
-    "github": "GitHub",
-    "linkedin": "LinkedIn"
-  },
+    
+  "nav": 
+  { "home": "Home", "projects": "Projects", "contact": "Contact" },
   "hero": {
     "subtitle": "Full-stack Developer",
     "title": "Building SaaS-like platforms, booking systems, and admin dashboards",
-    "description": "Riyadh-based developer specializing in Next.js, Supabase, and Tailwind CSS. I help businesses turn ideas into scalable web applications.",
-    "ctaProjects": "View Work",
-    "ctaContact": "Contact Me"
+    "description": "Riyadh-based developer specializing in Next.js, Supabase, and Tailwind CSS.",
+    "ctaProjects": "View work",
+    "ctaContact": "Contact me"
   },
-  "about": {
-    "title": "Quick Intro",
-    "text": "I create booking platforms, B2B marketing systems, and admin dashboards with integrated payment gateways (PayTabs, Geidea, Moyasar)."
-  }
+  "projects": {
+    "title": "Selected projects",
+    "subtitle": "A few examples of SaaS-like platforms and dashboards.",
+    "example": {
+      "name": "B2B Marketing & Booking Platform",
+      "description": "Next.js + Supabase platform to manage leads, bookings and admin dashboards.",
+      "tech": "Tech: Next.js · Supabase · Tailwind CSS"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a SaaS idea, booking system or dashboard in mind? Tell me about it.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Full name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "message": "Project details",
+      "messagePlaceholder": "Describe the product, budget range, and timeline.",
+      "submit": "Send (soon)"
+    }
+  },
+  "footer": {
+  "line1": "© {year} Abdulrahman. All rights reserved.",
+  "line2": "Building SaaS-like platforms with Next.js · Supabase · Tailwind."
+}
 }
