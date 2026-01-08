@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "hero": {
+    "subtitle": "Full-stack Developer",
+    "title": "Building SaaS-like platforms, booking systems, and admin dashboards",
+    "description": "Riyadh-based developer specializing in Next.js, Supabase, and Tailwind CSS. I help businesses turn ideas into scalable web applications.",
+    "ctaProjects": "View Work",
+    "ctaContact": "Contact Me"
+  },
+  "about": {
+    "title": "Quick Intro",
+    "text": "I create booking platforms, B2B marketing systems, and admin dashboards with integrated payment gateways (PayTabs, Geidea, Moyasar)."
+  }
+}

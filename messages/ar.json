@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "projects": "المشاريع",
+    "contact": "تواصل",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "hero": {
+    "subtitle": "مطور Full-stack",
+    "title": "أبني منصات SaaS، أنظمة حجز، ولوحات تحكم إدارية",
+    "description": "مطور مقيم في الرياض متخصص في Next.js، Supabase، و Tailwind CSS. أساعد الشركات في تحويل الأفكار إلى تطبيقات ويب قابلة للتوسع.",
+    "ctaProjects": "عرض الأعمال",
+    "ctaContact": "تواصل معي"
+  },
+  "about": {
+    "title": "نبذة سريعة",
+    "text": "أنشئ منصات حجز، أنظمة تسويق B2B، ولوحات تحكم مع بوابات دفع مدمجة (PayTabs، Geidea، Moyasar)."
+  }
+}

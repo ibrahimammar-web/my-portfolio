@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "hero": {
+    "subtitle": "Full-Stack Entwickler",
+    "title": "Erstelle SaaS-Plattformen, Buchungssysteme und Admin-Dashboards",
+    "description": "Entwickler aus Riad, spezialisiert auf Next.js, Supabase und Tailwind CSS.",
+    "ctaProjects": "Arbeiten ansehen",
+    "ctaContact": "Kontaktieren"
+  },
+  "about": {
+    "title": "Kurze Vorstellung",
+    "text": "Ich erstelle Buchungsplattformen, B2B-Marketing-Systeme und Admin-Dashboards."
+  }
+}
