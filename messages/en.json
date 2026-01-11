@@ -1,7 +1,13 @@
 {
     
-  "nav": 
-  { "home": "Home", "projects": "Projects", "contact": "Contact" },
+  "nav": {
+  "about": "Who am I?",
+  "projects": "Projects",
+  "skillsServices": "Skills & services",
+  "caseStudies": "Articles & stories",
+  "testimonials": "Client feedback",
+  "contact": "Contact me"
+},
   "hero": {
     "subtitle": "Full-stack Developer",
     "title": "Building SaaS-like platforms, booking systems, and admin dashboards",
@@ -32,7 +38,7 @@
     }
   },
   "footer": {
-  "line1": "© {year} Abdulrahman. All rights reserved.",
-  "line2": "Building SaaS-like platforms with Next.js · Supabase · Tailwind."
-}
+    "line1": "© {year} Abdulrahman. All rights reserved.",
+    "line2": "Building SaaS-like platforms with Next.js · Supabase · Tailwind."
+  }
 }

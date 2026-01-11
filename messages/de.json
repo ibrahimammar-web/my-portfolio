@@ -1,5 +1,12 @@
 {
-  "nav": { "home": "Startseite", "projects": "Projekte", "contact": "Kontakt" },
+  "nav": {
+  "about": "Wer bin ich?",
+  "projects": "Projekte",
+  "skillsServices": "Skills & Services",
+  "caseStudies": "Artikel & Stories",
+  "testimonials": "Feedback von Kunden",
+  "contact": "Schreib mir"
+},
    "hero": {
     "subtitle": "Full-Stack Entwickler",
     "title": "Erstelle SaaS-Plattformen, Buchungssysteme und Admin-Dashboards",

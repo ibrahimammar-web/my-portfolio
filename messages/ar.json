@@ -1,5 +1,12 @@
 {
-  "nav": { "home": "الرئيسية", "projects": "المشاريع", "contact": "تواصل" },
+   "nav": {
+    "about": "أنا مين؟",
+    "projects": "المشاريع",
+    "skillsServices": "المهارات والخدمات",
+    "caseStudies": "المقالات",
+    "testimonials": "آراء العملاء",
+    "contact": "تواصل معي"
+  },
   "hero": {
     "subtitle": "مطور Full-stack",
     "title": "أبني منصات SaaS، أنظمة حجز، ولوحات تحكم إدارية",
