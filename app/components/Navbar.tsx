@@ -71,7 +71,7 @@ export function Navbar() {
   return (
     <header className="border-b border-slate-800 bg-slate-950/80 backdrop-blur">
       <nav className={
-          'mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3 ' +
+          'mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 ' +
           (isArabic ? 'flex-row-reverse' : '')
         }>
         {/* Logo */}
@@ -108,6 +108,16 @@ export function Navbar() {
       }>
           {/* Social icons - Desktop */}
           <div className="hidden items-center gap-2 lg:flex">
+            
+            <a
+              href="https://www.upwork.com/freelancers/your-upwork"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full border border-slate-700 bg-slate-900 p-1.5 text-slate-300 transition-colors duration-200 hover:border-emerald-500 hover:text-emerald-400"
+              aria-label="Upwork"
+            >
+              <SiUpwork size={16} />
+            </a>
             <a
               href="https://github.com/your-github"
               target="_blank"
@@ -124,15 +134,7 @@ export function Navbar() {
             >
               <TfiLinkedin size={16} />
             </a>
-            <a
-              href="https://www.upwork.com/freelancers/your-upwork"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-full border border-slate-700 bg-slate-900 p-1.5 text-slate-300 transition-colors duration-200 hover:border-emerald-500 hover:text-emerald-400"
-              aria-label="Upwork"
-            >
-              <SiUpwork size={18} />
-            </a>
+            
             <a
               href="https://www.instagram.com/your-instagram"
               target="_blank"
@@ -148,30 +150,44 @@ export function Navbar() {
             <button
               type="button"
               onClick={() => setLangOpen((v) => !v)}
-              className="flex items-center gap-1 rounded-md border border-slate-700 bg-slate-900 px-2 py-1 text-xs text-slate-200 transition-colors duration-200 hover:border-emerald-500"
+              className={
+                'flex items-center gap-1 rounded-md border border-slate-700 bg-slate-900 px-2 py-1 text-xs text-slate-200 transition-colors duration-200 hover:border-emerald-500 ' +
+                (isArabic ? 'flex-row-reverse' : '')
+              }
             >
               <Image
                 src={activeLocale.flagSrc}
                 alt={activeLocale.label}
-                width={16}
+                width={20}
                 height={12}
-                className="rounded"
               />
-              <span className="hidden sm:inline">{activeLocale.label}</span>
-              <span className="ml-1 text-[10px] text-slate-400">
+              <span className="hidden sm:inline text-[14px]">
+                {activeLocale.label}
+              </span>
+              <span
+                className={
+                  'text-[20px] text-slate-400 ' +
+                  (isArabic ? 'mr-1' : 'ml-1')
+                }
+              >
                 {langOpen ? '▴' : '▾'}
               </span>
             </button>
 
             {langOpen && (
-              <div className="absolute right-0 z-30 mt-1 w-36 rounded-md border border-slate-700 bg-slate-900 py-1 text-xs shadow-lg">
+              <div
+                className={
+                  'absolute z-30 mt-1 w-36 rounded-md border border-slate-700 bg-slate-900 py-1 text-xs shadow-lg ' +
+                  (isArabic ? 'left-0' : 'right-0')
+                }
+              >
                 {locales.map((l) => (
                   <button
                     key={l.code}
                     type="button"
                     onClick={() => switchLocale(l.code)}
                     className={
-                      'flex w-full items-center gap-2 px-2 py-1 text-left hover:bg-slate-800 ' +
+                      'flex w-full text-[14px] items-center gap-2 px-2 py-1 text-left hover:bg-slate-800 ' +
                       (l.code === activeLocale.code
                         ? 'text-emerald-400'
                         : 'text-slate-200')
@@ -180,15 +196,15 @@ export function Navbar() {
                     <Image
                       src={l.flagSrc}
                       alt={l.label}
-                      width={16}
+                      width={18}
                       height={12}
-                      className="rounded"
                     />
                     <span>{l.label}</span>
                   </button>
                 ))}
               </div>
             )}
+
           </div>
 
           {/* Burger menu - Mobile / Tablet */}
@@ -226,7 +242,12 @@ export function Navbar() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="border-t border-slate-800 bg-slate-950 lg:hidden">
-          <div className="mx-auto flex max-w-5xl flex-col gap-2 px-4 py-3 text-sm">
+          <div
+            className={
+              'mx-auto flex max-w-5xl flex-col gap-2 px-4 py-3 text-sm ' +
+              (isArabic ? 'items-end text-right' : 'items-start text-left')
+            }
+          >
             {links.map((link) => (
               <a
                 key={link.label}
@@ -237,7 +258,13 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
-            <div className="mt-2 flex items-center gap-3">
+
+            <div
+              className={
+                'mt-2 flex items-center gap-3 ' +
+                (isArabic ? 'justify-end' : 'justify-start')
+              }
+            >
               <a
                 href="https://github.com/your-github"
                 target="_blank"
@@ -274,6 +301,7 @@ export function Navbar() {
           </div>
         </div>
       )}
+
     </header>
   );
 }

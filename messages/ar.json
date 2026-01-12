@@ -1,11 +1,11 @@
 {
    "nav": {
     "about": "أنا مين؟",
-    "projects": "المشاريع",
+    "projects": "مشاريعي",
     "skillsServices": "المهارات والخدمات",
-    "caseStudies": "المقالات",
-    "testimonials": "آراء العملاء",
-    "contact": "تواصل معي"
+    "caseStudies": "مقالاتي",
+    "testimonials": "آراء عملائي",
+    "contact": "تواصل معايا"
   },
   "hero": {
     "subtitle": "مطور Full-stack",
