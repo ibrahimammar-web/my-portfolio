@@ -8,12 +8,16 @@
   "testimonials": "Client feedback",
   "contact": "Contact me"
 },
-  "hero": {
-    "subtitle": "Full-stack Developer",
-    "title": "Building SaaS-like platforms, booking systems, and admin dashboards",
-    "description": "Riyadh-based developer specializing in Next.js, Supabase, and Tailwind CSS.",
-    "ctaProjects": "View work",
-    "ctaContact": "Contact me"
+   "home": {
+    "hero": {
+      "label": "Building dashboards, landing pages & automations",
+      "title": "Junior Full‑Stack Developer leveraging AI to ship better products",
+      "subtitle": "Crafting fast, delightful web experiences with Next.js, Supabase, and automation workflows powered by AI.",
+      "ctaPrimary": "Download CV",
+      "ctaSecondary": "View projects",
+      "availability": "Available for remote roles in EU & KSA · Open to freelance projects",
+      "videoLabel": "Watch my 60‑second intro"
+    }
   },
   "projects": {
     "title": "Selected projects",

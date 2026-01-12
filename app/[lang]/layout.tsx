@@ -1,8 +1,8 @@
 import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
+import {getMessages, getLocale} from 'next-intl/server';
 import {ReactNode} from 'react';
-import {Navbar} from '../components/Navbar';
-import {Footer} from '../components/Footer';
+import {Navbar} from '@/components/layout/Navbar';
+import {Footer} from '@/components/layout/Footer'
 
 export default async function LocaleLayout({
   children
@@ -10,12 +10,22 @@ export default async function LocaleLayout({
   children: ReactNode;
 }) {
   const messages = await getMessages();
+  const locale = await getLocale();
+  const isArabic = locale === 'ar';
 
   return (
-    <NextIntlClientProvider messages={messages}>
-      <div className="flex min-h-screen flex-col bg-slate-950 text-slate-100">
+       <NextIntlClientProvider messages={messages} locale={locale} timeZone="Asia/Riyadh">
+      <div
+        dir={isArabic ? 'rtl' : 'ltr'}
+        className={
+          'flex min-h-screen flex-col ' +
+          (isArabic ? 'font-arabic' : 'font-body')
+        }
+      >
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1">
+          {children}
+        </main>
         <Footer />
       </div>
     </NextIntlClientProvider>

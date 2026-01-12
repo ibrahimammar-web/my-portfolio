@@ -69,16 +69,13 @@ export function Navbar() {
   ];
 
   return (
-    <header className="border-b border-slate-800 bg-slate-950/80 backdrop-blur">
-      <nav className={
-          'mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 ' +
-          (isArabic ? 'flex-row-reverse' : '')
-        }>
+    <header className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
+      <nav className="relative mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
         {/* Logo */}
         <a href={basePath} className="flex items-center gap-2">
           <Image
             src={isArabic ? '/ibrahim-logo-ar.svg' : '/ibrahim-logo.svg'}
-            alt={isArabic ? 'عبدالرحمن شعار' : 'Abdulrahman logo'}
+            alt={isArabic ? 'إبراهيم عمار شعار' : 'Ibrahim Ammar logo'}
             width={100}
             height={100}
             priority
@@ -87,8 +84,7 @@ export function Navbar() {
 
         {/* Links - Desktop */}
         <div  className={
-          'hidden items-center gap-4 text-xs lg:flex ' +
-          (isArabic ? 'flex-row-reverse' : '')
+          'hidden items-center gap-4 text-xs lg:flex '
         }>
           {links.map((link) => (
             <a
@@ -102,12 +98,12 @@ export function Navbar() {
         </div>
 
         {/* Right side */}
-        <div  className={
-        'flex items-center gap-3 ' +
-        (isArabic ? 'flex-row-reverse' : '')
-      }>
+        <div className="flex items-center gap-3">
           {/* Social icons - Desktop */}
-          <div className="hidden items-center gap-2 lg:flex">
+          <div className={
+            'hidden items-center gap-2 lg:flex ' +
+            (isArabic ? 'flex-row-reverse' : '')
+          }>
             
             <a
               href="https://www.upwork.com/freelancers/your-upwork"
@@ -151,8 +147,7 @@ export function Navbar() {
               type="button"
               onClick={() => setLangOpen((v) => !v)}
               className={
-                'flex items-center gap-1 rounded-md border border-slate-700 bg-slate-900 px-2 py-1 text-xs text-slate-200 transition-colors duration-200 hover:border-emerald-500 ' +
-                (isArabic ? 'flex-row-reverse' : '')
+                'flex items-center gap-1 rounded-md border border-slate-700 bg-slate-900 px-2 py-1 text-xs text-slate-200 transition-colors duration-200 hover:border-emerald-500 '
               }
             >
               <Image
@@ -244,8 +239,7 @@ export function Navbar() {
         <div className="border-t border-slate-800 bg-slate-950 lg:hidden">
           <div
             className={
-              'mx-auto flex max-w-5xl flex-col gap-2 px-4 py-3 text-sm ' +
-              (isArabic ? 'items-end text-right' : 'items-start text-left')
+              'mx-auto flex max-w-5xl flex-col gap-2 px-4 py-3 text-sm ' 
             }
           >
             {links.map((link) => (
@@ -261,8 +255,7 @@ export function Navbar() {
 
             <div
               className={
-                'mt-2 flex items-center gap-3 ' +
-                (isArabic ? 'justify-end' : 'justify-start')
+                'mt-2 flex items-center gap-3'
               }
             >
               <a

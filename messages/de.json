@@ -7,12 +7,16 @@
   "testimonials": "Feedback von Kunden",
   "contact": "Schreib mir"
 },
-   "hero": {
-    "subtitle": "Full-Stack Entwickler",
-    "title": "Erstelle SaaS-Plattformen, Buchungssysteme und Admin-Dashboards",
-    "description": "Entwickler aus Riad, spezialisiert auf Next.js, Supabase und Tailwind CSS.",
-    "ctaProjects": "Arbeiten ansehen",
-    "ctaContact": "Kontaktieren"
+"home": {
+    "hero": {
+      "label": "Dashboards, Landing Pages & Automatisierungen",
+       "title": "Junior Full‑Stack Developer, der mit KI bessere Produkte baut",
+      "subtitle": "Ich entwickle schnelle und angenehme Web-Erlebnisse mit Next.js, Supabase und automatisierten Workflows, die von KI unterstützt werden.",
+      "ctaPrimary": "Lebenslauf herunterladen",
+      "ctaSecondary": "Projekte ansehen",
+      "availability": "Verfügbar für Remote-Rollen in der EU & KSA · Offen für Freelance-Projekte",
+      "videoLabel": "Mein 60‑Sekunden Intro ansehen"
+    }
   },
   "projects": {
     "title": "Ausgewählte Projekte",
