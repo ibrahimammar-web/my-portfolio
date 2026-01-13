@@ -1,8 +1,9 @@
 'use client';
 
 import {useTranslations, useLocale} from 'next-intl';
+import {DownloadIcon} from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
+import {NeuralButton} from '@/components/shadcn-studio/ui/neural-button';
 
 export function Hero() {
   const t = useTranslations('home.hero');
@@ -32,31 +33,32 @@ export function Hero() {
         <h1
         className={
           'mb-4 text-balance text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-slate-50 ' +
-          (isArabic ? 'font-arabic-heading' : 'font-heading')
+          (isArabic ? 'font-arabic-heading leading-arabic-heading' : 'font-heading')
         }
       >
         {t('title')}
       </h1>
 
         {/* Subheading */}
-        <p className="mb-6 max-w-2xl text-balance text-sm text-slate-300 sm:text-base">
+        <p className="mb-6 max-w-3xl text-balance text-sm text-slate-300 sm:text-base">
           {t('subtitle')}
         </p>
 
         {/* CTAs */}
-        <div className="mb-3 flex flex-wrap items-center justify-center gap-3">
-          <Button size="lg">
+        <div className="mb-8 flex flex-wrap items-center justify-center gap-5">
+          <Button size="lg" variant="outline" className="bg-transparent border-emerald-500 border-dashed shadow-none text-emerald-300 hover:bg-emerald-500/10 hover:text-emerald-200">
+            <DownloadIcon className="size-4" />
             {t('ctaPrimary')}
           </Button>
-          <Button size="lg" variant="outline" className="border-slate-600 bg-transparent">
+          <NeuralButton>
             {t('ctaSecondary')}
-          </Button>
+          </NeuralButton>
         </div>
 
         {/* Availability line */}
-        <p className="mb-8 text-xs text-slate-400">
+        {/* <p className="mb-8 text-xs text-slate-400">
           {t('availability')}
-        </p>
+        </p> */}
 
         {/* Video card placeholder */}
         <div className="w-full max-w-3xl">

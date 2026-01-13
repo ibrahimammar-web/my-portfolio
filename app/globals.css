@@ -150,6 +150,5 @@ body {
   .leading-arabic-heading {
     line-height: 1.2; 
     font-weight: 800;
-    /* @apply text-5xl; */
   }
 }

@@ -9,13 +9,13 @@
 },
 "home": {
     "hero": {
-      "label": "Dashboards, Landing Pages & Automatisierungen",
-       "title": "Junior Full‑Stack Developer, der mit KI bessere Produkte baut",
-      "subtitle": "Ich entwickle schnelle und angenehme Web-Erlebnisse mit Next.js, Supabase und automatisierten Workflows, die von KI unterstützt werden.",
+      "label": "Ich bin Ibrahim Ammar 👋🏻",
+      "title": "Junior Full‑Stack Webentwickler. Ich nutze KI, um bessere digitale Produkte zu bauen",
+      "subtitle": "Ich helfe Unternehmen und Gründern, digitale Produkte remote umzusetzen. Ich suche nach Kooperationen, die echten Mehrwert für Nutzer bringen und mich als Entwickler weiterentwickeln.",
       "ctaPrimary": "Lebenslauf herunterladen",
-      "ctaSecondary": "Projekte ansehen",
-      "availability": "Verfügbar für Remote-Rollen in der EU & KSA · Offen für Freelance-Projekte",
-      "videoLabel": "Mein 60‑Sekunden Intro ansehen"
+      "ctaSecondary": "Meine Projekte ansehen",
+      "availability": "Offen für Remote‑Stellen in Europa und Saudi‑Arabien · Verfügbar für Freelance‑Aufträge",
+      "videoLabel": "60‑Sekunden‑Intro ansehen"
     }
   },
   "projects": {
