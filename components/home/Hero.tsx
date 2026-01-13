@@ -71,13 +71,15 @@ export function Hero() {
             {t('videoLabel')}
           </p>
           <div className="aspect-video overflow-hidden rounded-xl border border-slate-800 bg-slate-900/60 shadow-xl shadow-emerald-500/10">
-            {/* Placeholder image أو div – استبدله لاحقًا بـ Vimeo */}
-            <div className="flex h-full items-center justify-center">
-              <span className="text-xs text-slate-500">
-                Video intro placeholder
-              </span>
-            </div>
+            <iframe
+              className="h-full w-full"
+              src="https://www.youtube.com/embed/VIjFxZgi6AM?si=NmKR0DO0PhDWusK2"
+              title="60-second intro"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
           </div>
+
         </div>
       </div>
     </section>

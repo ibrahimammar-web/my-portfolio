@@ -30,8 +30,17 @@ function NeuralButton(props: NeuralButtonProps) {
 
   const backgroundDecorations = (
     <>
-      <span className='pointer-events-none absolute inset-0 -z-1 bg-gradient-to-r from-neutral-900/20 to-white/20'>
-        <span className='absolute inset-px rounded-[calc(var(--radius-xl)-1px)] bg-sky-600 dark:bg-sky-400/60' />
+      <span className="pointer-events-none absolute inset-0 -z-1 bg-linear-to-r from-black/40 to-black/10">
+        <span className="
+          absolute inset-px  
+          text-sm font-medium
+          rounded-sm
+          bg-[oklch(0.22_0.03_240)]      
+          dark:bg-[oklch(0.22_0.03_240)]
+          border border-[oklch(0.72_0.12_220)/0.4] 
+        "
+
+ />
       </span>
 
       <svg
