@@ -1,8 +1,9 @@
 'use client';
 
 import {useTranslations, useLocale} from 'next-intl';
-import {DownloadIcon} from 'lucide-react';
+import {CodeXml, DownloadIcon} from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 import {NeuralButton} from '@/components/shadcn-studio/ui/neural-button';
 
 export function Hero() {
@@ -31,13 +32,13 @@ export function Hero() {
 
         {/* H1 */}
         <h1
-        className={
-          'mb-4 text-balance text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-slate-50 ' +
-          (isArabic ? 'font-arabic-heading leading-arabic-heading' : 'font-heading')
-        }
-      >
-        {t('title')}
-      </h1>
+           className={
+            'mb-4 text-balance text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-slate-50 ' +
+            (isArabic ? 'font-arabic-heading leading-arabic-heading' : 'font-heading')
+          }
+                >
+          {t('title')}
+        </h1>
 
         {/* Subheading */}
         <p className="mb-6 max-w-3xl text-balance text-sm text-slate-300 sm:text-base">
@@ -50,7 +51,8 @@ export function Hero() {
             <DownloadIcon className="size-4" />
             {t('ctaPrimary')}
           </Button>
-          <NeuralButton>
+          <NeuralButton className='rounded-sm px-7 py-[1.4rem]'>
+            <CodeXml />
             {t('ctaSecondary')}
           </NeuralButton>
         </div>
@@ -60,27 +62,48 @@ export function Hero() {
           {t('availability')}
         </p> */}
 
-        {/* Video card placeholder */}
+        {/* Video card */}
         <div className="w-full max-w-3xl">
-          <p
+        <div
+          className={
+            'relative mb-2 flex items-center text-xs font-medium uppercase tracking-wide text-slate-400 ' +
+            (isArabic ? 'flex-row-reverse' : 'flex-row')
+          }
+        >
+          {/* النص يأخذ المساحة */}
+          <span
             className={
-              'mb-2 text-xs font-medium uppercase tracking-wide text-slate-400 ' +
+              'flex-1 ' +
               (isArabic ? 'text-right' : 'text-left')
             }
           >
             {t('videoLabel')}
-          </p>
-          <div className="aspect-video overflow-hidden rounded-xl border border-slate-800 bg-slate-900/60 shadow-xl shadow-emerald-500/10">
-            <iframe
-              className="h-full w-full"
-              src="https://www.youtube.com/embed/VIjFxZgi6AM?si=NmKR0DO0PhDWusK2"
-              title="60-second intro"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            />
-          </div>
+          </span>
 
+          {/* السهم ملتصق بجانب الفيديو */}
+          <Image
+            src="/arrow.png"
+            alt="arrow to video"
+            width={100}
+            height={40}
+            className={
+              'hidden md:block  ml-2 opacity-70 absolute top-5' +
+              (isArabic ? ' right-[-5.5rem]' : ' left-[-5.5rem] -scale-x-100')
+            }
+          />
         </div>
+
+        <div className="aspect-video overflow-hidden rounded-xl border border-slate-800 bg-slate-900/60 shadow-xl shadow-emerald-500/10">
+          <iframe
+            className="h-full w-full"
+            src="https://www.youtube.com/embed/VIjFxZgi6AM?si=NmKR0DO0PhDWusK2"
+            title="60-second intro"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
+      </div>
+
       </div>
     </section>
   );

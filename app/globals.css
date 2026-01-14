@@ -163,16 +163,17 @@ body {
   }
 
   .font-heading {
-    font-family: var(--font-heading), system-ui, sans-serif;
+    /* font-family: var(--font-heading), system-ui, sans-serif; */
+    font-family: var(--font-arabic-heading), system-ui, sans-serif;
   }
 
   .font-body {
     font-family: var(--font-body), system-ui, sans-serif;
   }
 
-  /* كلاس لزيادة line-height لعناوين العربي */
   .leading-arabic-heading {
-    line-height: 1.2; 
-    font-weight: 800;
+    line-height: 1.2;
+    font-weight: 700;
   }
 }
+

@@ -16,7 +16,7 @@
       "ctaPrimary": "Download CV",
       "ctaSecondary": "Browse my projects",
       "availability": "Open to remote roles in Europe and Saudi Arabia · Available for freelance work",
-      "videoLabel": "Watch a 60‑second intro"
+      "videoLabel": "Get to know me in 60 seconds"
     }
   },
   "projects": {
@@ -42,7 +42,7 @@
     }
   },
   "footer": {
-    "line1": "© {year} Abdulrahman. All rights reserved.",
-    "line2": "Building SaaS-like platforms with Next.js · Supabase · Tailwind."
+    "line1": "© {year} All rights reserved for Ibrahim Ammar.",
+    "line2": "I design and develop web experiences and digital products powered by AI."
   }
 }

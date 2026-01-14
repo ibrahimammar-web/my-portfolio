@@ -15,7 +15,7 @@
       "ctaPrimary": "Lebenslauf herunterladen",
       "ctaSecondary": "Meine Projekte ansehen",
       "availability": "Offen für Remote‑Stellen in Europa und Saudi‑Arabien · Verfügbar für Freelance‑Aufträge",
-      "videoLabel": "60‑Sekunden‑Intro ansehen"
+      "videoLabel": "Lerne mich in 60 Sekunden kennen"
     }
   },
   "projects": {
@@ -41,7 +41,7 @@
     }
   },
   "footer": {
-  "line1": "© {year} Abdulrahman. Alle Rechte vorbehalten.",
-  "line2": "Ich entwickle SaaS-Plattformen mit Next.js · Supabase · Tailwind."
+  "line1": "© {year} Alle Rechte vorbehalten für Ibrahim Ammar.",
+  "line2": "Ich entwerfe und entwickle Web-Erlebnisse und digitale Produkte, die von KI unterstützt werden."
 }
 }
